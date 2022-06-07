@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator figur</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script async src="./script/index.js"></script>
+</head>
+<body>
+    <div id="input_box">
+        <div class="left">
+            <input placeholder="szerokość" id="firstInput">
+            <input placeholder="wysokość" id="secondInput">
+            <select id="selectParameter">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="km">km</option>
+            </select>
+            <button id="button" onclick="calculator()">WPROWADŹ</button>
+        </div>
+        <div class="right">
+            <div class="firstP"><p>Pole powierzchni jest równe: </p><p id="field"></p></div>
+            <div class="secondP"><p>Obwód jest równy: </p><p id="circuit"></p></div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="figure">
+            <div id="up">
+                <p id="widthTop"></p>
+            </div>
+            <div id="center">
+                <p id="heightLeft"></p>
+                <p id="heightRight"></p>
+            </div>
+            <div id="down">
+                <p id="widthBottom"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
